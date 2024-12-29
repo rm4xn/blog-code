@@ -1,0 +1,19 @@
+.post {
+  margin: 30px 8vw;
+  width: 65vw;
+}
+
+.image {
+  display: table;
+  height: 100%;
+  text-align: center;
+}
+
+.image > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.image img {
+  width: 50%;
+}

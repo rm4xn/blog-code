@@ -1,0 +1,38 @@
+
+.navbar-brand {
+  display: table;
+}
+
+.navbar-brand > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navbar-brand > a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 1ex;
+  text-decoration: none;
+}
+
+.navbar-options {
+  display: flex;
+}
+
+.navbar-options > * {
+  margin-left: 1rem;
+}
+
+.navbar-theme > * {
+  vertical-align: middle;
+}
+
+.navbar-theme span {
+  padding: 0 .5ex;
+}
+
+.navbar-user span {
+  border-left: 1.5px solid #495057;
+  padding: 0 1rem;
+  font-size: 2rem;
+}

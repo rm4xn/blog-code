@@ -1,0 +1,34 @@
+.post-list {
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  top: 20vh;
+}
+
+.post-list button {
+  position: absolute;
+  top: 15px;
+  right: 100%;
+}
+
+.post-list .list {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 0 1rem;
+}
+
+.post-list .post-result {
+  list-style-type: none;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.post-list .post-result:not(:last-of-type) {
+  border-bottom: 1px solid lightgray;
+}
+
+.post-list .title {
+  color: rgba(0, 0, 0, 0.8);
+}

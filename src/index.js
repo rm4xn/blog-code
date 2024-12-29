@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import "primereact/resources/themes/lara-light-indigo/theme.css" //theme
+import "primereact/resources/primereact.min.css" //core css
+import "primeicons/primeicons.css" //icons
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import "./index.css"
+import "./navbar/navbar.css"
+import "./post/post.css"
+import "./post/post-list/post-list.css"
+
+import Nav from "./navbar/navbar"
+import Post from "./post/post"
+import PostList from "./post/post-list/post-list"
+
+const nav = ReactDOM.createRoot(document.getElementById("nav"))
+nav.render(<Nav />)
+
+const post = ReactDOM.createRoot(document.getElementById("post"))
+post.render(<Post />)
+
+const postList = ReactDOM.createRoot(document.getElementById("post-list"))
+postList.render(<PostList />)
